@@ -56,7 +56,7 @@
 
     echo "$is_active <br>";
 
-
+    // STRINGS
     $myName="muhwezi";
     // convert to upper case
     echo strtoupper("$myName <br>");
@@ -79,7 +79,65 @@
     echo substr($myName, 3);
 
 
-  
+
+    // NUMBERS
+    echo 40;
+    echo "<br>";
+    echo -30;
+    echo "<br>";
+    echo 40.22;
+    echo "<br>";
+    echo 40+22;
+    echo "<br>";
+    echo 40%3;
+    echo "<br>";
+    echo (4+44)*9;
+    echo "<br>";
+
+    $num=10;
+    $num++;
+    $num--;
+    $num+=25;
+    $num*+25;
+    echo $num;
+    echo "<br>";
+
+   // get absolute num
+   echo abs(-800);
+   echo "<hr>";
+
+   // get a number to the power
+   echo pow(8, 2);
+
+  echo "<hr>";
+// square root
+   echo sqrt(64);
+
+  echo "<hr>";
+   // max
+   echo max(2,10);
+
+  echo "<hr>";
+   // min
+   echo min(44,11);
+
+  echo "<hr>";
+
+  // round a number
+  echo round(45.44);
+
+  echo "<hr>"; 
+
+  // round up
+
+  echo ceil(4.1);
+
+
+  echo "<hr>";
+
+  // round a number down
+  echo floor(4.9);
+
     
     ?>
     <!-- Compiled and minified JavaScript -->
