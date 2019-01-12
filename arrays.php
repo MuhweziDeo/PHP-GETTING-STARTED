@@ -16,7 +16,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">php</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="sass.html">Sass</a></li>
-          <li><a href="arrays.php">Arrays</a></li>
+          <li><a href="arrays.php">Url patterns</a></li>
           <li><a href="madlibs.php">madlibs game</a></li>
           <li><a href="forms.php">forms</a></li>
         </ul>
@@ -30,42 +30,26 @@
       
     </ul>
     
-    <h1 class="red-text">MadLibs Game</h1>
+    <h1 class="red-text">Arrays</h1>
     <div class="row">
-      <form action="madlibs.php" method="get">
-        <div class="input-field col s3">
-          <input name="Color"  id="text-1" type="text" class="validate" required>
-          <label for="text-1">Color</label>
-        </div>
-        <div class="input-field col s3">
-          <input name="pluralNoun"  type="text" id="text-2"class="validate" required>
-          <label for="text-2">PuralNoun</label>
-        </div>
-        <div class="input-field col s3">
-          <input name="Celebrity"  type="text" id="text-3"class="validate" required>
-          <label for="text-3">Celebrity</label>
-        </div>
-        
-        <div class="input-field col s3">
-          <button class="btn waves-effect waves-light " type="submit" name="action">Generate
-          </button>
-        </div>
-        
-        
-      </form>
+     
     </div>
     <?php
-    $color=$_GET['Color'];
+    
+    $friends=array('dee','deo','aggrey','aggreydeo');
 
-    $pluralNoun=$_GET['pluralNoun'];
+    echo $friends[0];
 
-    $celebrity=$_GET['Celebrity'];
+    echo "<hr>";
 
-    echo "<p class='$color-text'>Roses are $color <br></p>";
+    // modify array
+    $friends[0]= "new deo";
+    
 
-    echo "$PuralNoun are blue <br>";
-
-    echo "i love $celebrity <br>";
+    echo $friends[0];
+    echo "<hr>";
+    // count array
+    echo count($friends);
     
     ?>
     <!-- Compiled and minified JavaScript -->
