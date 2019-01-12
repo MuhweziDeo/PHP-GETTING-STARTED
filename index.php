@@ -13,8 +13,8 @@
 <body>
 <nav>
     <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#!" class="brand-logo">PHP</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">php</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="sass.html">Sass</a></li>
         <li><a href="badges.html">Components</a></li>
@@ -34,8 +34,14 @@
 
 
     <?php
-    // variables
+    // echo "<h1>dee<h1/>";
+    // echo "there was once named a man $characterName <br>";
+    // echo "he was $characterAge years old <br>";
+    // $characterName='dee';
+    // echo "really liked the name $characterName <br>";
+    // echo "but he didnt like being $characterAge <br>";
 
+    // variables
     // string
     $characterName="John";
     // int
@@ -48,17 +54,32 @@
     // null value
     null;
 
-    echo "$is_active";
+    echo "$is_active <br>";
 
+
+    $myName="muhwezi";
+    // convert to upper case
+    echo strtoupper("$myName <br>");
+    // convert to uppercase
+    echo strtolower("MUHWEZI <br>");
+
+    // prints length of a strinf
+    echo strlen($myName);
+    echo "<br>";
+    // index 
+     echo "<br>";
+    // replace index
+    $myName[0]="d";
+    echo $myName;
+    echo "<br>";
+    // replace string
+    echo str_replace("wezi", "aggrey", $myName);
+
+    // get a subtring
+    echo substr($myName, 3);
 
 
   
-    echo "<h1>dee<h1/>";
-    echo "there was once named a man $characterName <br>";
-    echo "he was $characterAge years old <br>";
-    $characterName='dee';
-    echo "really liked the name $characterName <br>";
-    echo "but he didnt like being $characterAge <br>";
     
     ?>
     <!-- Compiled and minified JavaScript -->
