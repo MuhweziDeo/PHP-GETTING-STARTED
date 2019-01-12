@@ -16,7 +16,7 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="sass.html">Sass</a></li>
           <li><a href="badges.html">Components</a></li>
-          <li><a href="calculator.php">calculator</a></li>
+          <li><a href="collapsible.html">Javascript</a></li>
           <li><a href="forms.php">forms</a></li>
         </ul>
       </div>
@@ -28,32 +28,34 @@
       <li><a href="collapsible.html">Javascript</a></li>
       
     </ul>
-
-   
-
+    
+    <h1 class="red-text">Calculator</h1>
     <div class="row">
-      <form action="forms.php" method="get">
-        <div class="input-field col s6">
-          <input  name="name" id="first_name" type="text" class="validate" required>
-          <label for="first_name">First Name</label>
+      <form action="calculator.php" method="get">
+
+         <div class="input-field col s6">
+          <input name="num1"  id="num1" type="number" class="validate" required>
+          <label for="num1">num1</label>
         </div>
-        <div class="input-field col s6">
-          <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-        <i class="material-icons right">send</i>
-        </button>
-         
+
+         <div class="input-field col s6">
+          <input name="num2"  type="number" id="num2"class="validate" required>
+          <label for="num2">num2</label>
         </div>
+       
+
+        <div class="input-field col s6">
+          <button class="btn waves-effect waves-light " type="submit" name="action">Calculate
+          </button>
+        </div>
+        
         
       </form>
     </div>
-    <hr>
 
-    <?php 
-
-    echo  $_GET['name'];
-
+    <?php
+    echo  $_GET['num1']+$_GET['num2'];
     ?>
-
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
