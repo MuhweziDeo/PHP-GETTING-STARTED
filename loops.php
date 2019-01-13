@@ -31,11 +31,9 @@
       
     </ul>
     
-    <h1 class="red-text">Switch</h1>
+    <h1 class="red-text">Loops</h1>
     <div class="row">
       <form action="switch.php" method="POST">
-  <h1>Whats ur grade?</h1>
-         
          <div class="input-field col s6">
         
           <input name="grade"  id="num1" type="text" class="validate" required>
@@ -54,24 +52,19 @@
 
 
     <?php
-    // switch
-    $grade =$_POST['grade'];
-
-    switch ($grade) {
-      case 'A':
-      print "U did amazing";
-        break;
-      case 'B':
-      print 'u did ok';
-        break;
-      
-      default:
-       print  "Grade $grade is invalid choose  between A and B";
-        break;
-    }
-
+ 
     // while loops
+    $index=1;
+    while ( $index<= 10) {
+      print "$index <br>";
 
+      $index++;
+    }
+    // do while loop
+    do {
+     print $index;
+     $index++;
+    } while ( $index<= 10);
 
     
     ?>
