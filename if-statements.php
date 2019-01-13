@@ -21,7 +21,7 @@
           <li><a href="forms.php">forms</a></li>
           <li><a href="assocaite-arrays.php">assocaite arrays</a></li>
           <li><a href="functions.php">functions</a></li>
-           <li><a href="if-statements.php">if statements</a></li>
+           <li><a href="if-statements.php">if-statements</a></li>
         </ul>
       </div>
     </nav>
@@ -33,7 +33,7 @@
       
     </ul>
     
-    <h1 class="red-text">Return statements</h1>
+    <h1 class="red-text">If statements</h1>
     <div class="row container">
 
         
@@ -41,14 +41,16 @@
     
     <?php
 
-    function cube($num){
+    $isMale=true;
+    $isTall=true;
 
-      // return keyword breaks out of function
-
-      return pow($num, 3);
+    if ($isMale && $isTall) {
+      print "u are male and tall";
+    }
+    else{
+       print "u are not female";
     }
 
-    print cube(4);
 
    
     
