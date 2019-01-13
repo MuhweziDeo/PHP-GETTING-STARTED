@@ -32,37 +32,21 @@
       
     </ul>
     
-    <h1 class="red-text">Assocaite arrays</h1>
+    <h1 class="red-text">Functions</h1>
     <div class="row container">
-      <form action="assocaite-arrays.php" method="post">
-          <div class="input-field col s3">
-          <input name="name"  type="text" id="text-2"class="validate" required>
-          <label for="text-2">Name</label>
-        </div>
 
-          <div class="input-field col s3">
-          <button class="btn waves-effect waves-light " type="submit" name="action">Generate
-          </button>
-        </div>
         
-        
-        
-       
-        
-      </form>
     </div>
     
     <?php
 
+    // function
+    function sayHi($name){
+      print "hey $name";
+    }
 
-    // key value pair arrays
-    // keys shoulw be unqiue
-    $grades = array('dee' =>'B' ,'deo'=>'A','aggrey'=>"C" );
-
-    print $grades[$_POST['name']];
-
-    
-    
+    // call function
+    print sayHi("dee");
     
     ?>
     <!-- Compiled and minified JavaScript -->
