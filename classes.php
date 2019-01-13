@@ -32,6 +32,40 @@
 		// $book->author="dee2";
 		// $book->title=502;
 		echo $book->title;
+
+
+		// OBJECT FUNCTIONS
+
+		class Student{
+			var $name;
+			var $major;
+			var $gpa;
+
+			function __construct($aName,$aMajor,$aGpa){
+
+				$this->$name=$aName;
+				$this->$major=$aMajor;
+				$this->$gpa=$aGpa;
+			}
+
+			function hasHonors(){
+				if ($this->gpa < 1) {
+
+					return "true";
+				}
+				else{
+					return "flase";
+				}
+
+			}
+		}
+
+		$student1=new Student('dee','bis',5);
+		$student2= new Student('deo','bit',3);
+
+		print $student1->hasHonors(); 
+
+	
 		?>
 	</body>
 </html>
