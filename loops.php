@@ -33,7 +33,7 @@
     
     <h1 class="red-text">Loops</h1>
     <div class="row">
-      <form action="switch.php" method="POST">
+      <form action="" method="POST">
          <div class="input-field col s6">
         
           <input name="grade"  id="num1" type="text" class="validate" required>
@@ -65,6 +65,21 @@
      print $index;
      $index++;
     } while ( $index<= 10);
+
+
+    // for loops
+
+    for ($i=0; $i <6 ; $i++) { 
+      print "<p class='red-text'>$i</p><br>";
+    }
+
+    // loop over an array
+    $luckyNumbers=array(2,5,3,7,9,11,55);
+
+    for ($i=0; $i < count($luckyNumbers); $i++) { 
+
+      print "$luckyNumbers[$i] <br>" ;
+    }
 
     
     ?>
