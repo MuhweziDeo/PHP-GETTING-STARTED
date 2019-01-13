@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>PHP</title>
@@ -16,7 +16,7 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">php</i></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="checkboxes.php">Checkboxes</a></li>
-          <li><a href="arrays.php">Url patterns</a></li>
+          <li><a href="arrays.php">arrays</a></li>
           <li><a href="madlibs.php">madlibs game</a></li>
           <li><a href="forms.php">forms</a></li>
         </ul>
@@ -30,26 +30,46 @@
       
     </ul>
     
-    <h1 class="red-text">Arrays</h1>
-    <div class="row">
-     
+    <h1 class="red-text">Checkboxes</h1>
+    <div class="row container">
+      <form action="checkboxes.php" method="post">
+        
+        <p>
+          <label>
+            <input type="checkbox" name="fruits[]" value="apples" />
+            <span>Apples</span>
+          </label>
+        </p>
+
+          <p>
+          <label>
+            <input type="checkbox" name="fruits[]" value="oranges" />
+            <span>oranges</span>
+          </label>
+        </p>
+
+
+          <p>
+          <label>
+            <input type="checkbox" name="fruits[]" value="banana" />
+            <span>banana</span>
+          </label>
+        </p>
+        
+        <div class="input-field col s3">
+          <button class="btn waves-effect waves-light " type="submit" name="action">Generate
+          </button>
+        </div>
+        
+        
+      </form>
     </div>
+    
     <?php
+
+    $fruits=$_POST["fruits"];
+    print $fruits[0];
     
-    $friends=array('dee','deo','aggrey','aggreydeo');
-
-    echo $friends[0];
-
-    echo "<hr>";
-
-    // modify array
-    $friends[0]= "new deo";
-    
-
-    echo $friends[0];
-    echo "<hr>";
-    // count array
-    echo count($friends);
     
     ?>
     <!-- Compiled and minified JavaScript -->
