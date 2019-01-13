@@ -19,7 +19,7 @@
           <li><a href="arrays.php">arrays</a></li>
           <li><a href="madlibs.php">madlibs game</a></li>
           <li><a href="forms.php">forms</a></li>
-          <li><a href="assocaite-arrays.php">assocaite arrays</a></li>
+          <li><a href="assocaite-arrays.php">forms</a></li>
         </ul>
       </div>
     </nav>
@@ -31,45 +31,36 @@
       
     </ul>
     
-    <h1 class="red-text">Checkboxes</h1>
+    <h1 class="red-text">Assocaite arrays</h1>
     <div class="row container">
-      <form action="checkboxes.php" method="post">
-        
-        <p>
-          <label>
-            <input type="checkbox" name="fruits[]" value="apples" />
-            <span>Apples</span>
-          </label>
-        </p>
+      <form action="assocaite-arrays.php" method="post">
+          <div class="input-field col s3">
+          <input name="name"  type="text" id="text-2"class="validate" required>
+          <label for="text-2">Name</label>
+        </div>
 
-          <p>
-          <label>
-            <input type="checkbox" name="fruits[]" value="oranges" />
-            <span>oranges</span>
-          </label>
-        </p>
-
-
-          <p>
-          <label>
-            <input type="checkbox" name="fruits[]" value="banana" />
-            <span>banana</span>
-          </label>
-        </p>
-        
-        <div class="input-field col s3">
+          <div class="input-field col s3">
           <button class="btn waves-effect waves-light " type="submit" name="action">Generate
           </button>
         </div>
         
+        
+        
+       
         
       </form>
     </div>
     
     <?php
 
-    $fruits=$_POST["fruits"];
-    print $fruits[0];
+
+    // key value pair arrays
+    // keys shoulw be unqiue
+    $grades = array('dee' =>'B' ,'deo'=>'A','aggrey'=>"C" );
+
+    print $grades[$_POST['name']];
+
+    
     
     
     ?>
