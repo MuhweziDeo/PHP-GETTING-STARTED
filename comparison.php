@@ -23,6 +23,7 @@
           <li><a href="functions.php">functions</a></li>
            <li><a href="if-statements.php">if-statements</a></li>
            <li><a href="comparison.php"></a></li>
+           <li><a href="full-function-calculator.php">Full calculator</a></li>
         </ul>
       </div>
     </nav>
