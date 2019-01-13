@@ -22,7 +22,7 @@
           <li><a href="assocaite-arrays.php">assocaite arrays</a></li>
           <li><a href="functions.php">functions</a></li>
            <li><a href="if-statements.php">if-statements</a></li>
-           <li><a href="comparison.php">comparsion</a></li>
+           <li><a href="comparison.php"></a></li>
         </ul>
       </div>
     </nav>
@@ -34,23 +34,27 @@
       
     </ul>
     
-    <h1 class="red-text">If statements</h1>
+    <h1 class="red-text">Comparisons</h1>
     <div class="row container">
 
         
     </div>
     
     <?php
+    // comparisons
+    // >= <= == 
+    function getMax($num1,$num2){
+      if ($num1>$num2){
+        return $num1;
+      }
 
-    $isMale=true;
-    $isTall=true;
+      else{
+        return $num2;
+      }
 
-    if ($isMale && $isTall) {
-      print "u are male and tall";
     }
-    else{
-       print "u are not female";
-    }
+
+    echo getMax(2,5);
 
 
    
