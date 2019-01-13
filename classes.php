@@ -113,7 +113,7 @@
 			}
 
 			function makesFish(){
-				print 'makes Fish';
+				print 'makes Fish <br>';
 			}
 		}
 
@@ -126,10 +126,15 @@
 				print 'makes pasta';
 			}
 
+			function makesFish(){
+				// overwrites function in chef class
+				print 'makes better fish';
+			}
+
 		}
 
 		$italianchef=new ItalainChef;
-		$italianchef->makesPizza();
+		$italianchef->makesFish();
 
 	
 		?>
