@@ -18,7 +18,7 @@
           <li><a href="badges.html">Components</a></li>
           <li><a href="madlibs.php">madlibs game</a></li>
           <li><a href="forms.php">forms</a></li>
-          <li><a href="switch.php">switch</a></li>
+          <li><a href="switch.php">forms</a></li>
         </ul>
       </div>
     </nav>
@@ -30,28 +30,20 @@
       
     </ul>
     
-    <h1 class="red-text">Calculator</h1>
+    <h1 class="red-text">Switch</h1>
     <div class="row">
-      <form action="full-function-calculator.php" method="POST">
-
-         <div class="input-field col s4">
-          <input name="num1"  id="num1" type="number" class="validate" required>
+      <form action="switch.php" method="POST">
+  <h1>Whats ur grade?</h1>
+         
+         <div class="input-field col s6">
+        
+          <input name="grade"  id="num1" type="text" class="validate" required>
           <label for="num1">num1</label>
         </div>
 
-         <div class="input-field col s4">
-          <input name="num2"  type="number" id="num2"class="validate" required>
-          <label for="num2">num2</label>
-        </div>
-
-         <div class="input-field col s4">
-          <input name="operator"  type="text" id="operator"class="validate" required>
-          <label for="operator">operator</label>
-        </div>
-       
 
         <div class="input-field col s6">
-          <button class="btn waves-effect waves-light " type="submit" name="action">Calculate
+          <button class="btn waves-effect waves-light " type="submit" name="action">submit
           </button>
         </div>
         
@@ -61,29 +53,22 @@
 
     <?php
 
+    $grade =$_POST['grade'];
 
-
-    $num1=$_POST['num1'];
-    $num2=$_POST['num2'];
-    $operator=$_POST['operator'];
-
-
-
-    if($operator == "+"){
-      echo $num1+$num2;
-
+    switch ($grade) {
+      case 'A':
+      print "U did amazing";
+        break;
+      case 'B':
+      print 'u did ok';
+        break;
+      
+      default:
+       print  "Grade $grade is invalid choose  between A and B";
+        break;
     }
 
-    elseif ($operator == '-') {
-      echo $num1-$num2;
-    }
 
-    elseif ($operator == '*') {
-      echo $num2*$num1;
-    }
-    elseif($operator == '/'){
-      echo $num1/$num2;
-    }
     
     ?>
     <!-- Compiled and minified JavaScript -->
