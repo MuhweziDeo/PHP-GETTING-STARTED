@@ -20,6 +20,7 @@
           <li><a href="forms.php">forms</a></li>
           <li><a href="switch.php">forms</a></li>
           <li><a href="loops.php">loops</a></li>
+          <li><a href="include.php">Include</a></li>
         </ul>
       </div>
     </nav>
