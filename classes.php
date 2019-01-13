@@ -65,6 +65,72 @@
 
 		print $student1->hasHonors(); 
 
+		// Setters Getters
+		class Movie{
+			// protect access to attributes
+			public $title;
+			private $rating;
+
+			function __construct($title,$rating){
+				$this->title=$title;
+				$this->rating=$rating;
+
+
+			}
+
+			// getter for private class
+			function getRating(){
+				return $this->rating;
+			}
+			// setter for private class
+			function setRating($rating){
+				if ($rating=="OR" || $rating=="PG") {
+					return $this->rating=$rating;
+				}
+				else{
+					print "invalid rating <br>";
+				}
+				
+			}
+		}
+
+		$avengers=new Movie("Avengers","PG-13");
+
+		print $avengers ->title;
+
+		print $avengers->getRating();
+		print $avengers->setRating('sss');
+
+		// inheritance  classes
+
+		class Chef{
+			function makesChicken(){
+				print "makes chicken";
+			}
+
+			function makesRibs(){
+				print 'makes Ribs';
+			}
+
+			function makesFish(){
+				print 'makes Fish';
+			}
+		}
+
+		$chef1=new Chef;
+
+		$chef1->makesFish();
+
+		class ItalainChef extends Chef{
+			function makesPizza(){
+				print 'makes pasta';
+			}
+
+		}
+
+		$italianchef=new ItalainChef;
+		$italianchef->makesPizza();
+
 	
 		?>
 	</body>
