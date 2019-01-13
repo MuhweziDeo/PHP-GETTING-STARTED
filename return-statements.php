@@ -21,7 +21,6 @@
           <li><a href="forms.php">forms</a></li>
           <li><a href="assocaite-arrays.php">assocaite arrays</a></li>
           <li><a href="functions.php">functions</a></li>
-          <li><a href="return-statements.php">return statements</a></li>
         </ul>
       </div>
     </nav>
@@ -33,7 +32,7 @@
       
     </ul>
     
-    <h1 class="red-text">Functions</h1>
+    <h1 class="red-text">Return statements</h1>
     <div class="row container">
 
         
@@ -41,13 +40,16 @@
     
     <?php
 
-    // function
-    function sayHi($name){
-      print "hey $name";
+    function cube($num){
+
+      // return keyword breaks out of function
+
+      return pow($num, 3);
     }
 
-    // call function
-    print sayHi("dee");
+    print cube(4);
+
+   
     
     ?>
     <!-- Compiled and minified JavaScript -->
